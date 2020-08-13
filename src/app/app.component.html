@@ -1,0 +1,17 @@
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+        <h1 class="display-3"><a routerLink="/">{{title}}</a><a href="#" class="snipcart-checkout">
+          <i class="fas fa-shopping-cart"></i>
+        </a></h1>
+      </div>
+  </div>
+<div class="container">
+  <router-outlet></router-outlet>
+  <div id="snipcart" [attr.data-api-key]="environment.snipcartApiKey" hidden>
+  </div>
+</div>
+<div class="jumbotron jumbotron-fluid footer">
+  <div class="container">
+    <p>Copyright© 2020 <a href="https://flotiq.com">Flotiq</a></p>
+  </div>
+</div>

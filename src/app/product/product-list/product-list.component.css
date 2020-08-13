@@ -1,0 +1,20 @@
+a {
+  color: black;
+  text-decoration: none;
+}
+.card {
+  margin-bottom: 2rem;
+}
+
+.page-item.active .page-link {
+  background-color: #299BAC;
+  border-color: #299BAC;
+}
+
+.card-price {
+  float: left;
+}
+
+.btn {
+  float: right;
+}

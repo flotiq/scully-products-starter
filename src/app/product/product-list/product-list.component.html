@@ -1,0 +1,42 @@
+<div class="row">
+  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" *ngFor="let product of products">
+    <a routerLink="/product/{{product.slug}}" routerLinkActive="active">
+      <div class="card">
+        <img class="card-img-top" *ngIf="images[product.id]"
+             src="https://api.flotiq.com/image/286x180/{{images[product.id].id}}.{{images[product.id].extension}}"
+             alt="{{product.name}}">
+        <img class="card-img-top" *ngIf="!images[product.id]"
+             src="/assets/placeholder.png"
+             alt="{{product.name}}"/>
+        <div class="card-body">
+          <h5 class="card-title">
+            {{product.name}}
+          </h5>
+          <h5 class="card-price">${{product.price}}</h5>
+          <button class="snipcart-add-item waves-effect waves-light btn-large btn"
+                  [attr.data-item-url]="'/product/' + product.slug"
+                  [attr.data-item-price]="product.price"
+                  [attr.data-item-image]="'https://api.flotiq.com/image/286x180/' + images[product.id].id + '.' + images[product.id].extension"
+                  [attr.data-item-name]="product.name"
+                  [attr.data-item-id]="product.id">
+            Add to cart
+          </button>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+<nav aria-label="Blog navigation" *ngIf="totalPages > 1">
+  <ul class="pagination justify-content-center">
+    <li class="page-item" [ngClass]="{ 'disabled': page === 1 }">
+      <a routerLink="/{{page - 1}}" class="page-link">Previous</a>
+    </li>
+    <li class="page-item" *ngFor="let pageNumber of [].constructor(totalPages); let i = index"
+        [ngClass]="{ 'active': page === i+1 }" >
+      <a routerLink="/{{i + 1}}" class="page-link">{{i + 1}}</a>
+    </li>
+    <li class="page-item" [ngClass]="{ 'disabled': page === totalPages }">
+      <a routerLink="/{{page + 1}}" class="page-link">Next</a>
+    </li>
+  </ul>
+</nav>

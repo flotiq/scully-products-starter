@@ -1,0 +1,38 @@
+<div *ngIf="product">
+
+  <div class="headerContainer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div id="custCarousel" class="carousel slide" data-ride="carousel" align="center">
+            <div class="carousel-inner">
+              <div *ngFor="let image of images; let i = index" ngClass="{{i===0 ? 'carousel-item active' : 'carousel-item'}}">
+                <img src="https://api.flotiq.com/image/1920x0/{{image.id}}.{{image.extension}}" alt="{{product.name}}"/>
+              </div>
+            </div>
+            <ol class="carousel-indicators list-inline">
+              <li *ngFor="let image of images; let i = index" ngClass="{{i===0 ? 'list-inline-item active' : 'list-inline-item'}}">
+                <a [attr.id]="'carousel-selector-' + i" [attr.data-slide-to]="i" data-target="#custCarousel">
+                  <img src="https://api.flotiq.com/image/100x0/{{image.id}}.{{image.extension}}" alt="{{product.name}}" class="img-fluid">
+                </a>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h2>{{product.name}}</h2>
+  <h2 class="product-price">
+    ${{product.price}}
+    <button class="snipcart-add-item waves-effect waves-light btn-large btn"
+          [attr.data-item-url]="'/product/' + product.slug"
+          [attr.data-item-price]="product.price"
+          [attr.data-item-image]="'https://api.flotiq.com/image/286x180/' + image.id + '.' + image.extension"
+          [attr.data-item-name]="product.name"
+          [attr.data-item-id]="product.id">
+    Add to cart
+  </button>
+  </h2>
+  <div [innerHTML]="product.description"></div>
+</div>
