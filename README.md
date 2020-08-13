@@ -5,9 +5,9 @@
 Scully Starter - Products
 ========================
 
-This is a [Scully](https://scully.io/) starter project for a shop. It's configured to pull blog posts data from [Flotiq](https://flotiq.com) and can be easily deployed to your cloud hosting - Heroku, Netlify, etc.
+This is a [Scully](https://scully.io/) starter project for a shop. It's configured to pull products data from [Flotiq](https://flotiq.com) and can be easily deployed to your cloud hosting - Heroku, Netlify, etc.
 
-Live Demo: https://thirsty-hoover-9327b3.netlify.app/
+Live Demo: https://competent-visvesvaraya-bb732c.netlify.app/
 
 Screenshot
 
