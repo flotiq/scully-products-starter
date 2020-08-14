@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiKey: 'MY_API_KEY',
+  flotiqApiKey: 'YOUR_FLOTIQ_API_KEY',
   snipcartApiKey: 'SNIPCART_API_KEY'
 };
 

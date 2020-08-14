@@ -71,11 +71,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
     
     This will start the Scully static server on `http://localhost:1668/`
 
-1. **Manage your posts using Flotiq editor**
+1. **Manage your products using Flotiq editor**
       
     You can now easily manage your posts using [Flotiq editor](https://editor.flotiq.com)
     
-    ![Managing posts using Flotiq](docs/manage-blogposts.png)
+    ![Managing posts using Flotiq](docs/manage-products.png)
 
 ### Running unit tests
 

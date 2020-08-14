@@ -16,8 +16,8 @@ const directoryPath = path.join(__dirname, ``)
 exports.importExamples = async () => {
     apiUrl = "https://api.flotiq.com"
   console.log(environment.environment);
-    headers[`X-AUTH-TOKEN`] = environment.environment.apiKey
-    assert.ok(environment.environment.apiKey,`You must specify API token, preferably Read and write Application API key (if you don't know what it is check: https://flotiq.com/docs/API/)`)
+    headers[`X-AUTH-TOKEN`] = environment.environment.flotiqApiKey
+    assert.ok(environment.environment.flotiqApiKey,`You must specify API token, preferably Read and write Application API key (if you don't know what it is check: https://flotiq.com/docs/API/)`)
 
     let imageToReplace = []
     let imageForReplacing = {}

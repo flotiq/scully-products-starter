@@ -11,7 +11,7 @@ import { ScullyLibModule } from '@scullyio/ng-lib';
 
 export function apiConfigFactory(): Configuration {
   const params: ConfigurationParameters = {
-    apiKeys: {'X-AUTH-TOKEN': environment.apiKey}
+    apiKeys: {'X-AUTH-TOKEN': environment.flotiqApiKey}
   };
   return new Configuration(params);
 }
