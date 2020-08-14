@@ -1,5 +1,5 @@
 import { ScullyConfig } from '@scullyio/scully';
-import { environment } from './src/environments/environment';
+import { environment } from './src/environments/environment.prod';
 export const config: ScullyConfig = {
   projectRoot: './src',
   projectName: 'scully-products-starter',
