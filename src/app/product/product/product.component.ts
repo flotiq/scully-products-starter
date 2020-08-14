@@ -15,7 +15,6 @@ export class SingleProductComponent implements OnInit {
   slug: string;
   images: Media[];
   image: Media;
-  height: number;
 
   constructor(
     private flotiqService: ContentProductService,
@@ -31,12 +30,10 @@ export class SingleProductComponent implements OnInit {
         if(product) {
           this.product = product.data[0];
           this.images = [];
-          this.height = 0;
           if (this.product.productGallery) {
             this.product.productGallery.forEach(galleryImage => {
               this.imageService.getImage(galleryImage.dataUrl.split('/')[5]).subscribe((image) => {
                 this.images.push(image);
-                this.height = Math.max(this.height, image.height);
               });
             })
           }
