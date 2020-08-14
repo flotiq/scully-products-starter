@@ -28,7 +28,7 @@ export class ProductListComponent implements OnInit {
     this.activatedRoute.params.subscribe((params: Params) => {
       this.page = +params.page || 1;
       this.productService.getProducts(this.page).subscribe((products) => {
-        if(products.data) {
+        if(products) {
           this.products = products.data;
           this.totalPages = products.total_pages;
           this.page = products.current_page;

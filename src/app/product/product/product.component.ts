@@ -28,7 +28,7 @@ export class SingleProductComponent implements OnInit {
     this.activatedRoute.params.subscribe((params: Params) => {
       this.slug = params.slug;
       this.productService.getProduct(this.slug).subscribe((product) => {
-        if(product.data) {
+        if(product) {
           this.product = product.data[0];
           this.images = [];
           this.height = 0;
