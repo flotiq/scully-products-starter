@@ -35,7 +35,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
     
     The next step is to configure our application to know from where it has to fetch the data.
     
-    In `src/environments/environment.ts` change `YOUR_FLOTIQ_API_KEY` to read-only Flotiq API key, and in `src/environments/environment.js` change `YOUR_FLOTIQ_API_KEY` to read-write API key (if you wish to import example data into your account), remember to change them back to some dummy text before commiting code to repository.
+    In `src/environments/environment.prod.ts` change `YOUR_FLOTIQ_API_KEY` to read-only Flotiq API key, and in `src/environments/environment.js` change `YOUR_FLOTIQ_API_KEY` to read-write API key (if you wish to import example data into your account).
+    
+    Remember to change them back to `YOUR_FLOTIQ_API_KEY` before committing code to repository.
     
     You have to also change `SNIPCART_API_KEY` to your Snipcart public API KEY.
     
