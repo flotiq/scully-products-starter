@@ -27,7 +27,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
    Create your [Flotiq.com](https://flotiq.com) account. Next, create the `Product` Content Type:
 
-   ![Blog Post content type in flotiq](docs/create-definition.png)
+   ![Product content type in flotiq](docs/create-definition.png)
     
    _Note: You can also create `Product` using [Flotiq REST API](https://flotiq.com/docs/API/)._ 
 
@@ -47,13 +47,13 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
         cd scully-products-starter/
         npm install
     ```
-    If you wish to import example blog posts to your account run:
+    If you wish to import example products to your account run:
             
     ```sh
         node ./.flotiq/importExample.js
     ```
     
-    It will add 10 images and 4 products posts to your Flotiq account.
+    It will add 10 images and 4 products to your Flotiq account.
         
     _Note: You need to put your Read and write API key in `src/environments/environment.js` for import to work. You don't need Product content type in your account. If you already have products with ids `product-1`, `product-2`, `product-3` and `product-4` they will be overwritten._
 
@@ -75,9 +75,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 1. **Manage your products using Flotiq editor**
       
-    You can now easily manage your posts using [Flotiq editor](https://editor.flotiq.com)
+    You can now easily manage your products using [Flotiq editor](https://editor.flotiq.com)
     
-    ![Managing posts using Flotiq](docs/manage-products.png)
+    ![Managing products using Flotiq](docs/manage-products.png)
 
 ### Running unit tests
 
