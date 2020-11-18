@@ -102,6 +102,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Collaborating
 
-   If you wish to talk with us about this project, feel free to hop on our [discord server](https://discord.gg/FwXcHnX).
+   If you wish to talk with us about this project, feel free to hop on our [![Discord Chat](https://img.shields.io/discord/682699728454025410.svg)](https://discord.gg/FwXcHnX) .
    
    If you found a bug, please report it in [issues](https://github.com/flotiq/scully-products-starter/issues).
