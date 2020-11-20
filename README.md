@@ -35,11 +35,13 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
     
     The next step is to configure our application to know from where it has to fetch the data.
     
-    In `src/environments/environment.prod.ts` change `YOUR_FLOTIQ_API_KEY` to read-only Flotiq API key, and in `src/environments/environment.js` change `YOUR_FLOTIQ_API_KEY` to read-write API key (if you wish to import example data into your account).
+    In `src/environments/environment.prod.ts` and in `src/environments/environment.js` change `YOUR_FLOTIQ_API_KEY` to Read only Flotiq API key.
+    
+    If you wish to import example data into your account change `YOUR_FLOTIQ_API_KEY` on line 17 in `.flotiq/importExample.js` to Read and write API KEY.
     
     Remember to change them back to `YOUR_FLOTIQ_API_KEY` before committing code to repository.
     
-    You have to also change `SNIPCART_API_KEY` to your Snipcart public API KEY.
+    You have to also change `SNIPCART_API_KEY` to your Snipcart public API KEY in `src/environments/environment.prod.ts` and in `src/environments/environment.js` to enable cart functionality.
     
 1.  **Start developing**
 
@@ -100,6 +102,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Collaborating
 
-   If you wish to talk with us about this project, feel free to hop on our [discord server](https://discord.gg/FwXcHnX).
+   If you wish to talk with us about this project, feel free to hop on our [![Discord Chat](https://img.shields.io/discord/682699728454025410.svg)](https://discord.gg/FwXcHnX) .
    
    If you found a bug, please report it in [issues](https://github.com/flotiq/scully-products-starter/issues).

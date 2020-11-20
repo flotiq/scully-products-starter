@@ -3,7 +3,6 @@ const assert = require(`assert`).strict
 const path = require(`path`)
 const fs = require(`fs`)
 const FormData = require(`form-data`)
-const environment = require('../src/environments/environment.js');
 
 let headers = {
     accept: `application/json`,
@@ -14,10 +13,9 @@ const directoryImagePath = path.join(__dirname, `images`)
 const directoryPath = path.join(__dirname, ``)
 
 exports.importExamples = async () => {
-    apiUrl = "https://api.flotiq.com"
-  console.log(environment.environment);
-    headers[`X-AUTH-TOKEN`] = environment.environment.flotiqApiKey
-    assert.ok(environment.environment.flotiqApiKey,`You must specify API token, preferably Read and write Application API key (if you don't know what it is check: https://flotiq.com/docs/API/)`)
+    apiUrl = "https://api.flotiq.com";
+    headers[`X-AUTH-TOKEN`] = 'YOUR_FLOTIQ_API_KEY';
+    assert.ok(headers[`X-AUTH-TOKEN`],`You must specify API token, preferably Read and write Application API key (if you don't know what it is check: https://flotiq.com/docs/API/)`)
 
     let imageToReplace = []
     let imageForReplacing = {}
