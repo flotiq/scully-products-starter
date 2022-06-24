@@ -50,7 +50,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
     If you wish to import example products to your account run:
             
     ```sh
-        flotiq import [flotiqApiKey] .
+        flotiq import . [flotiqApiKey]
     ```
     
     It will add 10 images and 4 products to your Flotiq account.
