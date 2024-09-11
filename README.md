@@ -9,7 +9,7 @@
 <br/>
 
 > [!IMPORTANT]  
-We no longer support Scully integration due to low interest from our users. Pull requests are welcome.
+We are not actively maintaining this repository due to low interest from our users. PRs are welcome.
 
 Scully Starter - Products
 ========================
